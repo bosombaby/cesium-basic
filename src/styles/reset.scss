@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+/* 例如给div添加样式 */
+div {
+    -webkit-user-select: none;
+    /*谷歌 /Chrome*/
+    -moz-user-select: none;
+    /*火狐/Firefox*/
+    -ms-user-select: none;
+    /*IE 10+*/
+    user-select: none;
+}
+
+
+
+// 设置滚动条样式
+/* 设置滚动条的宽度和高度 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* 设置滑块的背景颜色 */
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+/* 设置轨道的背景颜色 */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* 设置滑块悬停时的背景颜色 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
