@@ -1,10 +1,21 @@
 <template>
     <div id="cesiumContainer"></div>
+    <NarBar v-if="isLoadNavBar" />
 </template>
 
 <script setup>
 import * as Cesium from 'cesium'
 import { onMounted, ref, reactive, markRaw, watch } from 'vue'
+
+
+import NarBar from '@/components/NarBar.vue';
+
+// 导入数据
+import { useCesiumStore } from '@/store/'
+
+const cesiumStore = useCesiumStore()
+//是否加载子组件
+const isLoadNavBar = ref(false)
 
 let viewer
 let initViewer = () => {
@@ -60,8 +71,13 @@ let initViewer = () => {
     })
     // 地图切换成二维的，方向正北
     // viewer.scene.mode = Cesium.SceneMode.SCENE2D
-}
 
+
+    const rawViewer = markRaw(viewer)
+    cesiumStore.setCesiumViewer(rawViewer)
+
+    isLoadNavBar.value = true
+}
 
 // 相机定位的问题
 let setCameraPos = () => {
