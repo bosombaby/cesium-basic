@@ -1,7 +1,2 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+这个仓库是一个基于 Cesium 构建的基础仓库，使用 vite + vue3 作为模板语言。它提供了一个快速启动 Cesium 应用程序的基础结构，包括一些常用的组件和工具。如果您正在寻找一个快速启动 Cesium 应用程序的方式，这个仓库可能会对您有所帮助。
